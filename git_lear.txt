@@ -1,0 +1,241 @@
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git init
+Initialized empty Git repository in C:/Users/vshambannagari/Desktop/reddy_git/.git/
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ touch README.md
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ ls
+README.md  nano.txt
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git add .
+warning: LF will be replaced by CRLF in nano.txt.
+The file will have its original line endings in your working directory
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   nano.txt
+
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ touch pop.txt
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   nano.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        pop.txt
+
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git add .
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   nano.txt
+        new file:   pop.txt
+
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git commit -m "hello git, am learning"
+[master (root-commit) 362d1db] hello git, am learning
+ Committer: Vijay Bhaskar Reddy Shambannagari <vshambannagari@RHYMTECH.NET>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 1 insertion(+)
+ create mode 100644 README.md
+ create mode 100644 nano.txt
+ create mode 100644 pop.txt
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git branch -a
+* master
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git chechout -b dev
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git checkout -b dev
+Switched to a new branch 'dev'
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ git branch -a
+* dev
+  master
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ git checkout -b prod
+Switched to a new branch 'prod'
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (prod)
+$ git status
+On branch prod
+nothing to commit, working tree clean
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (prod)
+$ git branch -a
+  dev
+  master
+* prod
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (prod)
+$ git checkout master
+Switched to branch 'master'
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git branch -a
+  dev
+* master
+  prod
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (master)
+$ git branch -M main
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (main)
+$ git remote add origin https://github.com/darksnipper/git_learning.git
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (main)
+$ git remote -v
+origin  https://github.com/darksnipper/git_learning.git (fetch)
+origin  https://github.com/darksnipper/git_learning.git (push)
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (main)
+$ git push -u origin main
+
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 316 bytes | 79.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/darksnipper/git_learning.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (main)
+$ git checkout dev
+Switched to branch 'dev'
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ nano pop.txt
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ cat pop.txt
+reddy reddy reddy
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ nano pop.txt
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ cat pop.txt
+vj reddy reddy reddy
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ git status
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pop.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ git add .
+warning: LF will be replaced by CRLF in pop.txt.
+The file will have its original line endings in your working directory
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ git commit -m 'learning pull'
+[dev 51c8be0] learning pull
+ Committer: Vijay Bhaskar Reddy Shambannagari <vshambannagari@RHYMTECH.NET>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$ git push -u origin dev
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 147.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/darksnipper/git_learning/pull/new/dev
+remote:
+To https://github.com/darksnipper/git_learning.git
+ * [new branch]      dev -> dev
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+
+vshambannagari@RHYMDSK06 MINGW64 ~/Desktop/reddy_git (dev)
+$
