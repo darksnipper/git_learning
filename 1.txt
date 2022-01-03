@@ -1,0 +1,51 @@
+
+client = pymongo.MongoClient("mongodb+srv://<username>:<password>@cluster0.ecpbv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+db = client.test
+
+Loss of site reputation due to low  SEO ranking
+
+• Use 301 redirects ("RedirectPermanent") in.htaccess file to smartly redirect users, Googlebot and other spiders
+• Maintain internal linking consistentency within the webpages 
+• Syndicate your content on other sites
+Darkweb leaks:
+impact:
+Credential theft allows criminals to: 1.Reset passwords 2.Lock the victim out of the account
+ 3.Download private data 4.Gain access to other computers in the network or wipe the victim’s data and backups.
+remidideations:
+1. Restrict the employs not to use official email ids for social media registration. 2. Change the employs passwords every 30 days
+
+https://www.facebook.com/pabbathiharish/photos
+https://www.facebook.com/satipandu68
+8-7-12/6/3, Kattedan Road, Sai Colony, Telangana NGOS Colony, Hyderabad, Telangana 500077
+Name:Harish Chandra
+Address 1 : 8-7-16/165/6/190, Zip : 500077, Phone :9951793804
+Tradional ikkath sarees, near, 8-7-16/103/2, Hanuman Temple St, Hyderabad, Telangana 500077
+Name : sathish chandra, 
+Address 1 : 8-7-16/166/6/190, Zip : 500077, Phone : 919700768168
+
+
+
+
+https://rhymtechin.sharepoint.com/sites/RhymCRS/Shared%20Documents/Forms/AllItems.aspx?OR=Teams%2DHL&CT=1641212702198&id=%2Fsites%2FRhymCRS%2FShared%20Documents%2F2022&viewid=21f4cf71%2D6ed1%2D40c2%2D97a0%2Df9a7a56269ba
+
+29/12/2021
+
+Docker:
+1.portmapping:If perticular container is runing inside the docker it was not exposed to outside and
+we need to map the port with inside docker container with externarl Eg:docker run -p 8080:5000 container_name
+
+3.volume mapping:the docker container has available to inside then need to create outside copy
+Eg: docker run -v destination:presentAddress_conatiner
+Docekr_image:
+images are snapshots...
+1.Create docker image--> Build -->push
+2.Caching : it provides faster envs for everey layers
+========================================================
+git bash
+create folder and open it .
+->go to the folder and open git bash here 
+-> create a file and open with nano editor
+Eg:nano file.txt
+  |
+  ->write the content on it and ctrl+s to save ctrl+x to exit
+
