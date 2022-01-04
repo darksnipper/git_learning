@@ -66,3 +66,6 @@ git push -u origin main
 	or
 $ git push -f origin main
 
+
+https://blackkite.com/technical-grade/
+
