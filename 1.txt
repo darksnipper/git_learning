@@ -50,4 +50,19 @@ create folder and open it .
 Eg:nano file.txt
   |
   ->write the content on it and ctrl+s to save ctrl+x to exit
+#######################################################
+-->new repo
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/darksnipper/mr.one.git
+git push -u origin main
++++++++++++++++++++++
+Existing Repo
+git remote add origin https://github.com/darksnipper/mr.one.git
+git branch -M main
+git push -u origin main
+	or
+$ git push -f origin main
 
